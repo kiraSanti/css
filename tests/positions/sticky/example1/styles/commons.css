@@ -1,0 +1,60 @@
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 500vh;
+}
+
+#image-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 16px 0px;
+  overflow: hidden;
+  /* border: 2px solid red; */
+}
+
+#blue-eyes {
+  max-width: 100%;
+  display: block;
+}
+
+/* Al asignar 'position: sticky' a '.main-nav' y asignándole 'top: 16px, al principio éste se comportará como si su 'position' fuera 'relative', pero al hacer scroll y llegar al momento exacto en el que hay 16px entre '.main-nav' y el tope de la propia página: éste ('.main-nav') se quedará "pegado" allí*/
+
+.main-nav {
+  margin: auto;
+  max-width: 900px;
+  height: 50px;
+  background-color: #343336;
+  position: sticky;
+  top: 16px;
+}
+
+#main-nav-options {
+  margin: auto;
+  max-width: fit-content;
+  height: 50px;
+}
+
+#main-nav-options > * {
+  float: left;
+  padding: 10px;
+  width: 100px;
+  margin: 5px;
+  color: #0feb6e;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+
+.content {
+  /* border: 2px solid red; */
+  max-width: 900px;
+  margin: auto;
+  padding: 16px;
+}
+
+.content-p1 {
+  background-color: plum;
+  text-align: justify;
+  margin: auto;
+  padding: 16px;
+}

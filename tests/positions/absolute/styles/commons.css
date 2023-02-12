@@ -1,0 +1,69 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 200vh;
+}
+
+.parent {
+  background-color: #029eff;
+  max-width: 200px;
+  margin: 10px 0px 0px 10px;
+  padding: 5px;
+  position: relative;
+}
+
+.child {
+  padding: 5px;
+}
+
+/* Cuando asignamos 'position: absolute' a un elemento y no especificamos su width/height, éste se reduce a lo necesario segun su contenido: fit-content, osea que, si no hay nada dentro de éste (o si no tiene al menos algo de 'padding')... no se verá nada */
+
+/*Una vez asignamos 'position: absolute' a -por ejemplo- child-one, inmediatamente los demas elementos se acomodan como si éste no existiera, éste simplemente se 'pinta por encima de todos ellos (siempre y cuando la 'position' de estos sea static), y si lo borramos podremos ver que la posicion de los demás elementos no cambia.'*/
+
+/* si al padre de 'child-one' que es 'parent' no le ponemos algun tipo de position diferente a 'static'... al asignarle top, bottom, left, right a 'child-one', éste tomará como padre al ancestro mas cercano, en este caso el propio Document HTML: situándose así a 'npx' desde el 'top/right/bottom/left' del Document HTML. */
+
+.child-one {
+  background-color: #6de875;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.child-two {
+  background-color: #fe8174;
+  position: relative;
+}
+
+.child-three {
+  background-color: #ff88eb;
+  position: absolute;
+  bottom: 213px;
+}
+
+/* 'child-tree tiene 'position-absolute': pensaríamos que deberia estar por encima de 'child-two' y 'child-four' ambos con 'position:  relative'. Sin embargo podemos ver que 'child-three' sólo está por encima de 'child-two', pero por debajo de 'child-four', y eso es por que 'child-four' está después de 'child-three' en el Document Flow*/
+
+.child-four {
+  background-color: khaki;
+  position: relative;
+}
+
+
+/* If there's 2 absolute elements, one will overlap the other according to the Document Flow: the last one overlaps the first one, in this case: 'out2' overlaps 'out1' */
+.out1 {
+  background-color: royalblue;
+  position: absolute;
+  top: 10px;
+  left: 250px;
+  padding: 5px;
+}
+
+.out2 {
+  background-color: fuchsia;
+  position: absolute;
+  top: 25px;
+  left: 250px;
+  padding: 5px;
+}
+
+

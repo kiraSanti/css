@@ -1,0 +1,104 @@
+.container {
+  border: 3px solid tomato;
+}
+
+h1,
+p {
+  margin: 20px 10px;
+}
+
+/*Border Styles*/
+.solid {
+  border: 3px solid black;
+}
+
+.dotted {
+  border: 3px dotted black;
+}
+
+.dashed {
+  border: 3px dashed black;
+}
+
+.double {
+  border: 3px double black;
+}
+
+.groove {
+  border: 3px groove black;
+}
+
+.ridge {
+  border: 3px ridge black;
+}
+
+.inset {
+  border: 3px inset black;
+}
+
+.outset {
+  border: 3px outset black;
+}
+
+.none {
+  border: 3px none black;
+}
+
+.hidden {
+  border: 3px hidden black;
+}
+
+.bordermixed {
+  border: 3px black;
+  border-style: solid dotted double dashed;
+}
+
+/*Border width*/
+
+.thin {
+  border: solid;
+  border-width: thin;
+}
+
+.medium {
+  border: solid;
+  border-width: medium;
+}
+
+.thick {
+  border: solid;
+  border-width: thick;
+}
+
+.customized {
+  border: solid;
+  border-width: 20px;
+}
+
+.mixed {
+  border: solid;
+  border-width: 20px thick medium thin;
+}
+
+.colormixed {
+  border: solid;
+  border-color: yellow blue red green;
+}
+
+.colorandwidthmixed {
+  border-width: 20px thick medium thin;
+  border-top: 20px solid yellow;
+  border-right: thick solid blue;
+  border-bottom: medium solid red;
+  border-left: thin solid green;
+}
+
+.radius {
+  border: thin solid midnightblue;
+  border-radius: 20px;
+}
+
+.radiusmixed {
+  border: thin solid midnightblue;
+  border-radius: 0px 20px 20px 0px;
+}

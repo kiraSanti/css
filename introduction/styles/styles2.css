@@ -1,0 +1,27 @@
+* {
+    color: yellow;
+}
+
+h1 {
+    color: green;
+}
+
+h4, q, i {
+    color: black;
+}
+
+#pa {
+    color: blue;
+}
+
+.parrafo {
+    color: red;
+}
+
+p {
+    color: green;
+}
+
+div {
+    border: 3px solid black;
+}

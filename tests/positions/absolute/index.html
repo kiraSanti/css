@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+
+    <div id="parent" class="parent">Parent <br><br>
+        <div id="one" class="child-one child">One</div>
+        <div id="two" class="child-two child">Two</div>
+        <div id="three" class="child-three child">Three</div>
+        <div id="four" class="child-four child">Four</div>
+
+
+
+    </div>
+
+    <div id="out1" class="out1">Out1</div>
+    <div id="out2" class="out2">Out2</div>
+
+
+
+
+
+
+
+
+
+    <p id="result"></p>
+
+    <script>
+
+        let hijo = document.getElementById("one")
+        let padre = hijo.parentNode;
+        let result = document.getElementById("result");
+
+        // padre.style.color = "red";
+        result.innerText = padre.id;
+
+    </script>
+
+
+</body>
+
+</html>

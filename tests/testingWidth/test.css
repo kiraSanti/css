@@ -1,0 +1,27 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: khaki;
+}
+
+#default {
+  margin: 0px;
+  padding: 0px;
+  width: 500px; /*default width: won't increase/decrease*/
+  border: thin solid red;
+}
+
+#min {
+  margin: 0px;
+  padding: 0px;
+  min-width: 500px; /*can't be less than 500px: it'll increase if possible*/
+  border: thin solid red;
+}
+
+#max {
+  margin: 0px;
+  padding: 0px;
+  max-width: 500px; /*can't exceed 500px: it'll decrease if possible*/
+  border: thin solid red;
+}

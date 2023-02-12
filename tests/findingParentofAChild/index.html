@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding Parent of A Child</title>
+</head>
+
+<body>
+
+    <nav id="main-menu">
+
+        <ul id="ul1">
+            <li id="inicio">
+                <a id="ainicio" href="">Inicio</a>
+            </li>
+            <li id="noticias">
+                <a id="anoticias">Noticias</a>
+            </li>
+            <li id="blog">
+                <a id="ablog" href="">Blog</a>
+            </li>
+            <li id="academia">
+                <a id="aacademia" >Academia</a>
+
+                <ul id="sub-menu-academia">
+                    <li id="web">
+                        <a id="aweb" href="https://platzi.com/escuela/escuela-web/" target="_blank">Desarrollo
+                            Web</a>
+                    </li>
+                    <li id="product">
+                        <a id="aproduct" href="https://platzi.com/escuela/escuela-producto/" target="_blank">Diseño de Producto</a>
+                    </li>
+                    <li id="devops">
+                        <a id="adevops" href="https://platzi.com/escuela/escuela-devops-cloud/" target="_blank">DevOps</a>
+                    </li>
+                </ul>
+
+            </li>
+
+            <li id="contacto">
+                <a id="acontacto" href="">Contacto</a>
+
+
+            </li>
+        </ul>
+    </nav>
+
+    <p id="result"></p>
+
+    <script>
+
+        let elementoHijo = document.getElementById("aacademia");
+        let elementoPadre = elementoHijo.parentNode;
+        let result = document.getElementById("result");
+
+        elementoPadre.style.color = "red";
+
+        result.innerText = elementoPadre.nodeName;
+
+
+    </script>
+
+
+</body>
+
+</html>

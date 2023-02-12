@@ -1,0 +1,51 @@
+body {
+  /*background-color: midnightblue;
+    background-image: url(../assets/images/kiritaHermosa.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; Todo lo anterior se puede declarar en una sola propiedad: background*/
+
+  background: midnightblue url(/assets/img/kiritaHermosa.png) no-repeat center
+    fixed;
+    background-size: 500px;
+}
+
+p {
+  color: papayawhip;
+  font-size: 15px;
+  text-align: justify;
+}
+
+#todoalterado {
+  color: red;
+  background-color: khaki;
+  border: 3px solid black;
+  opacity: 0.1;
+  /* la propiedad opacity altera a todo el elemento: contenido, padding, y border*/
+}
+
+#solobackgroundalterado {
+  color: red;
+  background-color: rgba(240, 230, 140, 0.637);
+  /* ahora podemos ver que, al usar el rgba, solo se alterara la opacidad del background, el contenido y el border seguiran intactos.*/
+  border: 3px solid black;
+}
+
+#sinalteraciones {
+  color: red;
+  background-color: khaki;
+  border: 3px solid black;
+}
+
+#conimagendefondo {
+  width: 400px;
+  height: 400px;
+  border: 3px solid khaki;
+  color: red;
+  /*
+  background-image: url(../assets/images/rumisGone.gif);
+  background-repeat: no-repeat;
+  background-position: top left;
+  bakground-attachment: fixed;*/
+  background: url(/assets/img/rumisGone.gif) no-repeat top left fixed;
+}

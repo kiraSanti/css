@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #0000009d;
+  font-family: monospace;
+}
+
+h1 {
+  color: coral;
+  background-color: black;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 3px solid cornsilk;
+  width: 500px;
+  height: 80px;
+  font-size: large;
+}
+
+#header2 {
+  color: cornflowerblue;
+}
+
+#header3 {
+  color: rgb(206, 65, 225);
+}
+
+.pairheader {
+  color: rgb(127, 255, 127);
+}
+
+p {
+  color: deepskyblue;
+  text-align: right;
+  font-size: larger;
+  font-weight: bold;
+}
+
+#parrafo1 {
+  text-align: center;
+  color: papayawhip;
+  background-color: black;
+}
+
+.parrafos {
+  text-align: justify;
+  color: navy;
+  background-color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.header {
+  background-color: red;
+  float: left;
+  width: 100%;
+  height: 50px;
+}
+
+.sidebar {
+  float: left;
+  width: 25%;
+  height: 400px;
+  background-color: aquamarine;
+}
+
+.content {
+  float: left;
+  width: 75%;
+  height: 400px;
+  background-color: khaki;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: midnightblue;
+  margin: 5px;
+  float: left;
+}
+
+.footer {
+  float: left;
+  width: 100%;
+  height: 40px;
+  background-color: lightslategrey;
+  margin-bottom: 50px;
+}

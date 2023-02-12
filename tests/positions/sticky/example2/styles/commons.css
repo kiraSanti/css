@@ -1,0 +1,35 @@
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 500vh;
+}
+
+#container {
+  margin: 32px;
+  border: 2px solid greenyellow;
+}
+
+.sub-container {
+  /* margin: 32px; */
+  border: 2px solid red;
+  margin-bottom: 100px;
+}
+
+/* Al haber varios elementos (.sub-container-header) con 'position: sticky' cada uno de estos permanecerá "pegado" hasta que 'haciendo scroll' lleguemos al final de su elemento padre (en este caso '.sub-container')... si seguimos haciendo scroll el elemento actual dejará de estar "pegado" y le dará lugar al siguiente elemento con 'position: sticky' para que esté "pegado" */
+
+.sub-container-header {
+  background-color: #343336;
+  color: #21b963;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  padding: 5px;
+  position: sticky;
+  top: 0px;
+}
+
+.sub-container-list > ul {
+  list-style: none;
+  padding: 0px;
+  margin-top: 5px;
+  margin-bottom: 200px;
+}

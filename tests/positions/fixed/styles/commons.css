@@ -1,0 +1,34 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 220vh;
+}
+
+#parent {
+  margin: 10px 0px 0px 10px;
+  width: 250px;
+  background-color: khaki;
+  position: absolute;
+}
+
+.child {
+  padding: 5px;
+}
+
+/* Aunque el padre de 'child-one' que es 'parent' tiene una 'position' diferente a 'static' ('position:relative'), al 'child-one' tener 'position: fixed' éste ignorará por completo cualquier ancestro que tenga, y se posicionará absolutamente con el propio Document HTML. Además, al ser 'fixed' se quedará fijo al hacer scroll! */
+
+#child-one {
+  background-color: cornflowerblue;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+
+#child-two {
+  background-color: lightgreen;
+}
+
+#child-three {
+  background-color: #ffa1a1;
+}

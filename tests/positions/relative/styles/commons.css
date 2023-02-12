@@ -1,0 +1,42 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.parent {
+  background-color: #029eff;
+  width: 200px;
+  margin: 10px 0px 0px 10px;
+  padding: 5px;
+  /* overflow: hidden; */
+}
+
+
+/* Al asignar 'position:relative' al 'child-one' --> if the other children (Two, Three, and Four) do not have 'position: relative' declared --> 'child-one' will overlap them all. A medida que vamos asignando 'position: relative' a cada uno de los elementos... cada uno se superpondrá al otro de acuerdo al Document Flow, es decir, Four estará por encima de todos, luego Three, luego Two, y One no superpondrá a ninguno */
+
+.child {
+  padding: 5px;
+  /* position: relative; */
+}
+
+.child-one {
+  background-color: #6de875;
+  position: relative;
+  top: 40px;
+}
+
+.child-two {
+  background-color: #fe8174;
+  /* position: relative; */
+}
+
+.child-three {
+  background-color: #ff88eb;
+  /* position: relative; */
+}
+
+.child-four {
+  background-color: khaki;
+  /* position: relative; */
+}

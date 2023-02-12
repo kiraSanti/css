@@ -1,0 +1,17 @@
+p {
+  text-align: justify;
+}
+
+p:first-child {
+  font-style: italic;
+}
+
+p::first-letter {
+  font-size: 50px;
+  color: #ecde58;
+}
+
+p:first-child::first-letter {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: cornflowerblue;
+}
