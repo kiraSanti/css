@@ -1,0 +1,57 @@
+/*
+    Con este Reset vamos a resolver...
+
+    👉 Unificar el uso de Custom Properties 🐱‍🏍
+    👉 Problemas generales de box-model 📦
+    👉 Problemas con imágenes, videos, e iconos svg 🖼️ 🎞️ 
+    👉 Problemas con tipografías y etiquetas input en formularios ☑️
+    👉 Unificar la tipografía de todas las etiquetas de una web 🦖
+
+*/
+
+/* 🐱‍🏍🐱‍🏍🐱‍🏍 Aquí definimos las Custom Properties (variables) 🐱‍🏍🐱‍🏍🐱‍🏍*/
+
+:root {
+  /* Colors 🌈 */
+
+  --primary-color: ;
+  --secondary-color: ;
+
+  /* 🦖 Tipography */
+
+  --primary: ;
+  --secondary: ;
+}
+
+/* y las adaptamos al...*/
+
+/* modo oscuro 🌚...  */
+@media (prefes-color-scheme: dark) {
+  :root {
+    --primary-color: ;
+    --secondary-color: ;
+  }
+}
+
+/* y al alto contrate ⚡...  */
+
+@media (prefers-contrast: high) {
+  :root {
+    --primary-color: ;
+    --secondary-color: ;
+  }
+}
+
+/* 🐱‍🏍🐱‍🏍🐱‍🏍🐱‍🏍🐱‍🏍🐱‍🏍🐱‍🏍🐱‍🏍🐱‍🏍🐱‍🏍🐱‍🏍🐱‍🏍🐱‍🏍🐱‍🏍🐱‍🏍🐱‍🏍🐱‍🏍🐱‍🏍 */
+
+/* 📦📦📦 Aquí solucionamos los Problemas generales de box-model 📦📦📦*/
+
+/* Reseteamos margins y paddings de todas las etiquetas! */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* 📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦 */

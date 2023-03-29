@@ -1,0 +1,39 @@
+html,
+body {
+  padding: 0px;
+  margin: 50px;
+  background-color: #f0e68c;
+  height: 100vh;
+  border: 2px solid blue;
+}
+
+ .container {
+  background-color: white;
+  border: 1px solid red; 
+}
+
+#texto {
+  max-width: 200px;
+  display: inline-block;
+}
+
+#botoncito {
+  max-width: 200px;
+  display: inline-block;
+  vertical-align: top;
+}
+ 
+
+a {
+  border: 1px solid green;
+  /* display: inline-block; */
+  
+}
+/*
+.btn {
+  outline: 2px solid blue;
+  background-color: lightblue;
+  color: black;
+  text-decoration: none;
+  padding: 15px 40px;
+} */
