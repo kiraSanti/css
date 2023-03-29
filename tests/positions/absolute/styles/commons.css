@@ -21,7 +21,7 @@ body {
 
 /*Una vez asignamos 'position: absolute' a -por ejemplo- child-one, inmediatamente los demas elementos se acomodan como si éste no existiera, éste simplemente se 'pinta por encima de todos ellos (siempre y cuando la 'position' de estos sea static), y si lo borramos podremos ver que la posicion de los demás elementos no cambia.'*/
 
-/* si al padre de 'child-one' que es 'parent' no le ponemos algun tipo de position diferente a 'static'... al asignarle top, bottom, left, right a 'child-one', éste tomará como padre al ancestro mas cercano, en este caso el propio Document HTML: situándose así a 'npx' desde el 'top/right/bottom/left' del Document HTML. */
+/* si al padre de 'child-one' que es 'parent' no le ponemos algun tipo de position diferente a 'static'... al asignarle top, bottom, left, right a 'child-one', éste tomará como padre al ancestro mas cercano, en este caso el propio Document HTML: situándose así a 'n px' desde el 'top/right/bottom/left' del Document HTML. */
 
 .child-one {
   background-color: #6de875;
@@ -38,7 +38,7 @@ body {
 .child-three {
   background-color: #ff88eb;
   position: absolute;
-  bottom: 213px;
+  bottom: 20px;
 }
 
 /* 'child-tree tiene 'position-absolute': pensaríamos que deberia estar por encima de 'child-two' y 'child-four' ambos con 'position:  relative'. Sin embargo podemos ver que 'child-three' sólo está por encima de 'child-two', pero por debajo de 'child-four', y eso es por que 'child-four' está después de 'child-three' en el Document Flow*/

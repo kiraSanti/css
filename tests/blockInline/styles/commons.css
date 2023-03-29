@@ -4,7 +4,7 @@ body {
   margin: 50px;
   background-color: #f0e68c;
   height: 100vh;
-  /* outline: 2px solid fuchsia; */
+  border: 2px solid fuchsia;
 }
 
 .container {
