@@ -38,7 +38,7 @@ body {
 .child-three {
   background-color: #ff88eb;
   position: absolute;
-  bottom: 20px;
+  bottom: 19px;
 }
 
 /* 'child-tree tiene 'position-absolute': pensaríamos que deberia estar por encima de 'child-two' y 'child-four' ambos con 'position:  relative'. Sin embargo podemos ver que 'child-three' sólo está por encima de 'child-two', pero por debajo de 'child-four', y eso es por que 'child-four' está después de 'child-three' en el Document Flow*/
@@ -47,7 +47,6 @@ body {
   background-color: khaki;
   position: relative;
 }
-
 
 /* If there's 2 absolute elements, one will overlap the other according to the Document Flow: the last one overlaps the first one, in this case: 'out2' overlaps 'out1' */
 .out1 {
@@ -66,4 +65,6 @@ body {
   padding: 5px;
 }
 
-
+p {
+  margin: 0;
+}

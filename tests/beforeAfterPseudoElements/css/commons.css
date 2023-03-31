@@ -1,0 +1,84 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+p {
+  margin: 0px;
+  padding: 5px;
+  border: 2px solid cornflowerblue;
+  border-radius: 12px;
+  display: inline;
+}
+
+/* Entonces ahora si vamos a explicar los pseudoelementos '::before' y '::after' 😀 */
+
+/* Lo que ponemos dentro de la propiedad 'content' (que es muy importante para que -incluso si la declaramos como vacía i.e ""- se muestre en pantalla lo que querramos) estará ANTES '::before' del contenido de 'p'... pero sigue estando DENTRO de 'p', simplemente que va a estar ANTES  del contenido del mismo.*/
+p::before {
+  content: ".";
+  background: tomato;
+}
+
+/* lo mismo sucede con '::after'... */
+
+p::after {
+  content: "";
+  width: 100px;
+  height: 50px;
+  background: yellow;
+  border: 3px solid green;
+  padding: 5px;
+  display: block;
+}
+
+/* en resumen: incluso si estos 2 pseudo elementos se llaman '::before' y '::after' respectivamente, lo que pongamos en ellos estará antes-depués del contenido de la etiqueta en cuestión, pero siguen siendo parte de la etiqueta y su modelo de caja*/
+
+/* y no te extrañes si no logras poner un pseudo elemento ::before/::after a una imagen... Simplemente éstas se comportan diferente... no encajan realmente into the typical content model of CSS (ellas en sí mismas son el contenido)... por lo tanto... no se les puede colocar pseudo elementos ::before/::after*/
+
+img {
+  width: 100px;
+  border: 3px solid yellow;
+  border-radius: 10px;
+}
+
+/* ...es decir que lo siguiente no funcionará... */
+img::before {
+  content: "yeah!";
+  background: red;
+}
+
+img::after {
+  content: "yeah!";
+  background: red;
+}
+/* (hasta aqui) */
+
+
+
+
+
+
+
+
+
+
+
